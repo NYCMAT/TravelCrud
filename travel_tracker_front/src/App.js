@@ -103,14 +103,14 @@ const handleUpdateTravel = ( travelData)=>{
     <main>
       <div>
           
-          <h1>Travel Tracker</h1>
+          <h1>Travel Tracker!</h1>
       </div>  
       <section>
         <div class='intro'>
         <h3></h3>
         </div>
         <h2>Enter a Destination into the system</h2><br/>
-        <form onSubmit={handleNewAdoptionFormSubmit}>
+        <form onSubmit={handleNewTravelFormSubmit}>
           Location: <input type="text" onChange={handleNewLocationChange}/><br/>
           Description: <input type="text" onChange={handleNewDescriptionChange}/><br/>
           Image: <input type="text" onChange={handleNewImageChange}/><br/>
