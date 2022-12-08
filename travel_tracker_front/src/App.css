@@ -1,38 +1,128 @@
-.App {
+h1 {
+  text-align: center;
+  margin-top: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color:  #f6dc73;
+  text-transform: uppercase;
+  background-color: rgba(51,170,51, .5);
+  margin-bottom: 10px;
+  /* text-transform: uppercase; */
+}
+
+h2 {
+  font-family: 'Mitr', sans-serif;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7b7ca1;
+}
+
+h3 {
+  font-family: 'Mitr', sans-serif;
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #7b7ca1;
+}
+
+/* image */
+img {
+  border-radius: 20px;
+  
+}
+
+button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #f6dc73;
+  color:  rgba(51,170,51, 1)
+}
+
+button:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+ul {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name {
+  color: #03045E;
+  font-size: 20px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+  text-align: center;
+  background-color: rgba(51,170,51, .5);
+  margin-top: 0px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  position: relative;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(51,170,51, .8);
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=submit]:hover {
+  background-color: #45a049;
 }
